@@ -6,25 +6,9 @@
 //  Copyright © 2020 Apple. All rights reserved.
 //
 
-//import UIKit
-//
-//
-//
-//
-//class FaceItemCollectionViewCell: UICollectionViewCell{
-//
-//    @IBOutlet weak var itemView: UIImageView!
-//    
-////    //ドラッグするもの
+import UIKit
 
-//
-//    //
-//    let dragInteraction = UIDragInteraction(delegate: self)
-//    imageView.addInteraction(dragInteraction)
-//
-//    func dragInteraction() {
-//           dragInteraction()
-//       }
-//
-
-//
+class FaceItemCollectionViewCell: UICollectionViewCell {
+    //ドラッグするもの
+    @IBOutlet weak var itemImage : UIImageView!
+}

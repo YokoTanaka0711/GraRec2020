@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="126-zN-ptB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="126-zN-ptB">
     <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,35 +18,31 @@
                         <subviews>
                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozl-G5-8Cu" customClass="PKCanvasView">
                                 <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" restorationIdentifier="itemSgueButtun" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zf-4s-wiK">
-                                        <rect key="frame" x="1082" y="50" width="92" height="92"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="92" id="4QT-On-cAF"/>
-                                            <constraint firstAttribute="height" constant="92" id="dbO-eB-svW"/>
-                                        </constraints>
-                                        <state key="normal" image="itemBox-1">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="qt1-vv-sip" kind="popoverPresentation" identifier="FaceItemSegue" popoverAnchorView="5zf-4s-wiK" id="CS4-ik-5WP">
-                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                            </segue>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="5zf-4s-wiK" secondAttribute="trailing" constant="20" id="aKy-r0-1CK"/>
-                                    <constraint firstItem="5zf-4s-wiK" firstAttribute="top" secondItem="ozl-G5-8Cu" secondAttribute="top" constant="50" id="x1l-fC-8rf"/>
-                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleAspectFit" restorationIdentifier="itemSgueButtun" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zf-4s-wiK">
+                                <rect key="frame" x="1082" y="50" width="92" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="4QT-On-cAF"/>
+                                    <constraint firstAttribute="height" constant="92" id="dbO-eB-svW"/>
+                                </constraints>
+                                <state key="normal" image="itemBox-1">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qt1-vv-sip" kind="popoverPresentation" identifier="FaceItemSegue" popoverAnchorView="5zf-4s-wiK" id="CS4-ik-5WP">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ozl-G5-8Cu" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="EO0-jL-xZM"/>
                             <constraint firstItem="ozl-G5-8Cu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="V4s-yR-5h8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5zf-4s-wiK" secondAttribute="trailing" constant="20" id="Vdj-F4-Axj"/>
                             <constraint firstItem="ozl-G5-8Cu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WhK-hz-5jD"/>
+                            <constraint firstItem="5zf-4s-wiK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Xmp-wA-VXj"/>
                             <constraint firstItem="ozl-G5-8Cu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="enG-23-J1w"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -74,6 +70,7 @@
                         <outlet property="canvasView" destination="ozl-G5-8Cu" id="Nnl-hg-fJ2"/>
                         <outlet property="pencilFingerBarButtonItem" destination="8cr-Wb-SnU" id="bpC-rG-p6b"/>
                         <outlet property="redoBarButtonItem" destination="0Nh-lV-o2K" id="YnF-zT-Mi2"/>
+                        <outlet property="toolBoxButton" destination="5zf-4s-wiK" id="83h-ob-cvG"/>
                         <outlet property="undoBarButtonitem" destination="vQi-JN-vlr" id="P9F-JN-De4"/>
                     </connections>
                 </viewController>
@@ -99,7 +96,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FaceCell" id="S94-9F-hJ8">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FaceCell" id="S94-9F-hJ8" customClass="FaceItemCollectionViewCell" customModule="GraReco2020" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="W3V-Y4-rbX">
@@ -112,6 +109,9 @@
                                                 </imageView>
                                             </subviews>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemImage" destination="iWG-WB-7c2" id="pYO-gu-BoA"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

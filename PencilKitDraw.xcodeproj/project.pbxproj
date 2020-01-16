@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		8E2A66BA23BC663700D0E815 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		8E2D0F6723CF5A20007A7EE5 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = "../../GraRec2020 3/PencilKitDraw/DataModel.swift"; sourceTree = "<group>"; };
+		8E2D0F6723CF5A20007A7EE5 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		8E42496523BDD95E002F5657 /* FaceItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceItemViewController.swift; sourceTree = "<group>"; };
 		8E535EB223CADC0B0084F66D /* FaceItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		9C720C209C7206E000000001 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
