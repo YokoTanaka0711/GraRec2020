@@ -308,9 +308,10 @@ extension DrawingViewController: UIDropInteractionDelegate {
     func dropInteraction(_ interaction: UIDropInteraction, performDrop session: UIDropSession) {
         session.loadObjects(ofClass: UIImage.self, completion: { [weak self] imageItems in
             guard let images = imageItems as? [UIImage] else { return }
-            let imageView = UIImageView(image: images.first)
+            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
             imageView.clipsToBounds = true
             imageView.contentMode = .scaleAspectFill
+            imageView.image = images.first
             self?.canvasView.addSubview(imageView)
             
             self?.dismissPopover()
